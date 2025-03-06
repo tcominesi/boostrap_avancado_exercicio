@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebac Pedras Preciosas</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        header, body {
+            background-color:#f7dcc4;
+        }
+        .nav-link{
+            color:black;
+        }
+        .carousel-item img{
+            height: 600px;
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <h1>Ebac Pedras Preciosas</h1>
+                <nav class="justify-content-end">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#conjuntos">Conjuntos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fale-conosco">Fale Conosco</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="2000" class="carousel-item active">
+                <img class="d-block w-100" src="./img/pedra1.jpg" alt="Pedra 1">
+            </div>
+            <div data-bs-interval="2000" class="carousel-item ">
+                <img class="d-block w-100" src="./img/pedra2.jpg" alt="Pedra 2">
+            </div>
+            <div data-bs-interval="2000" class="carousel-item ">
+                <img class="d-block w-100" src="./img/pedra3.jpg" alt="Pedra 3">
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button> 
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+    <h1>Conjuntos</h1>
+    <div id="conjuntos" class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <article class="card">
+                    <header class="card-header">
+                        Colar e Brinco 
+                    </header>
+                    <img src="https://cdn.dooca.store/69773/products/conjunto-de-colar-e-brincos-de-gota-grande-de-zirconia-verde-claro-cravejado-folheado-em-ouro-18k-02-francisca_450x600+fill_ffffff.jpg?v=1710515017&webp=0" >
+                    <div class="card-body">
+                        <h4 class="card-title"> Gota Grande </h4>
+                        <p class="card-text">Conjunto de brinco e colar Gota Grande banhado a ouro 18 kilates pedras zircônia </p>
+                        <a href="#" class="btn btn-primary">mais informações</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time> 06/03/2025 ás 10:04</time>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <article class="card">
+                    <header class="card-header">
+                        Colar e Brinco 
+                    </header>
+                    <img src="https://cdn.awsli.com.br/600x450/1231/1231468/produto/256566342/whatsapp-image-2024-02-23-at-10-11-23-dul9vgiu06.jpeg" >
+                    <div class="card-body">
+                        <h4 class="card-title"> Sol Dourado</h4>
+                        <p class="card-text">Conjunto de brinco e colar sol dourado ouro 18 kilates pedras ouro cristal</p>
+                        <a href="#" class="btn btn-primary">mais informações</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time> 06/03/2025 ás 16:04</time>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <article class="card">
+                    <header class="card-header">
+                        Colar e Brinco 
+                    </header>
+                    <img src="https://cdn.dooca.store/69773/products/conjunto-de-colar-e-brincos-com-nossa-sra-aparecida-com-zirconias-azuis-folheado-em-ouro-18k-1_450x600+fill_ffffff.jpg?v=1731340541&webp=0" >
+                    <div class="card-body">
+                        <h4 class="card-title"> Nossa Senhora Aparecida</h4>
+                        <p class="card-text">Conjunto de brinco e colar Nossa Senhora Aparecida com Zircônias Azuis banhado a ouro 18 kilates</p>
+                        <a href="#" class="btn btn-primary">mais informações</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time> 06/03/2025 ás 10:04</time>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div id="fale-conosco" class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Fale Conosco</h2>
+                <form class="text-bg p-4 mb-4">
+                    <label class="form-label" for="nome">Digite Seu Nome</label>
+                    <input class="form-control" type="text" id="nome required" >
+                    <label class="form-label" for="email">Seu E-mail:</label>
+                    <input class="form-control" type="email" id="email" required>
+                    <label class="form-label" for="telefone">Telefone:</label>
+                    <input class="form-control" type="tel" id="telefone" required>
+                    <label class="form-label text-dark" for="mensagem">Mensagem:</label>
+                    <textarea class="form-control mb-3" id="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..."></textarea>
+                    <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="termos" required>
+                    <label class="form-check-label" for="termos">Li e concordo com os termos</label>
+                    <button class="btn btn-dark btn-lg ml-auto">
+                        Enviar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer text-dark py-3 mt-5">
+        <div class="container text-center">
+            &copy; 2025 todos os direitos reservados - Ebac Pedras Preciosas
+            
+        </div>
+    </footer>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
